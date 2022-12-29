@@ -31,6 +31,7 @@ const signup = async (req, res) => {
 
 const login = async (req, res) => {
     try {
+        console.log('Login');
         const { username, password } = req.body;
         
         const serverClient = connect(api_key, api_secret, app_id);
